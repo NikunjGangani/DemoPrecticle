@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="139" id="KGk-i7-Jjw" customClass="RoomCell" customModule="VM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2l-3B-Xhn">
+                        <rect key="frame" x="0.0" y="0.0" width="348" height="139"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jnb-Zp-ARp">
+                                <rect key="frame" x="10" y="10" width="328" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room No." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MU-QP-P1n">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0t5-XO-Wfa">
+                                        <rect key="frame" x="0.0" y="20.5" width="328" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Occupied? Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkx-Vf-tMf">
+                                        <rect key="frame" x="0.0" y="46" width="328" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Occupancy: 12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eU9-wM-CBj">
+                                        <rect key="frame" x="0.0" y="63" width="328" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74W-ew-oR3">
+                                <rect key="frame" x="305" y="95" width="33" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="74W-ew-oR3" secondAttribute="trailing" constant="10" id="IMn-Ml-h52"/>
+                            <constraint firstItem="74W-ew-oR3" firstAttribute="top" secondItem="Jnb-Zp-ARp" secondAttribute="bottom" constant="5" id="VWJ-7V-u9l"/>
+                            <constraint firstItem="Jnb-Zp-ARp" firstAttribute="top" secondItem="n2l-3B-Xhn" secondAttribute="top" constant="10" id="bS6-vC-24x"/>
+                            <constraint firstAttribute="trailing" secondItem="Jnb-Zp-ARp" secondAttribute="trailing" constant="10" id="fxk-5V-SA8"/>
+                            <constraint firstItem="Jnb-Zp-ARp" firstAttribute="leading" secondItem="n2l-3B-Xhn" secondAttribute="leading" constant="10" id="kqf-cV-b2a"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="74W-ew-oR3" secondAttribute="bottom" constant="5" id="nCM-g3-sPu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="n2l-3B-Xhn" secondAttribute="bottom" id="82Q-cO-Ngo"/>
+                    <constraint firstAttribute="trailing" secondItem="n2l-3B-Xhn" secondAttribute="trailing" id="Z4C-8v-NSA"/>
+                    <constraint firstItem="n2l-3B-Xhn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iMO-zN-gN3"/>
+                    <constraint firstItem="n2l-3B-Xhn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="u8P-z8-rWX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLbl" destination="74W-ew-oR3" id="XgM-JO-nzw"/>
+                <outlet property="maxLbl" destination="eU9-wM-CBj" id="Ue9-pz-xF3"/>
+                <outlet property="occupiedLbl" destination="dkx-Vf-tMf" id="1Sm-xh-KlA"/>
+                <outlet property="roomNoLbl" destination="0t5-XO-Wfa" id="v84-qt-Qax"/>
+            </connections>
+            <point key="canvasLocation" x="157.97101449275362" y="113.50446428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
